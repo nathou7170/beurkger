@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #240404;
+}
+
+nav h1 {
+  color: #000000;
+  font-size: 30px;
+}
+nav .onglets{
+  margin-top: 5px;
+  margin-left: 400px;
+}
+nav .onglets a{
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  
+}
+nav .onglets a:hover{
+  border-bottom: 1px solid #240404;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('https://wft-burger-joint.weebly.com/uploads/1/2/0/8/120808934/main-bg_1.jpg');
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-shadow: #000 1px 0 10px;
+  padding: 70px;
+}
+
+header h1{
+  font-size: 50px;
+  margin: 10px 15px;
+}
+
+header h4{
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ffffff;
+}
+
+header button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+header button:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.main{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .content .card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main .content .card .left{
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff;
+}
+.main .content .card.right{
+  flex: 0 0 70%;
+}
+
+.main .content .card .right img{
+  height: 300px;
+  width: 400px;
+  margin-top: 5px;
+  
+}
+
+footer{
+  margin-top: 10px;
+  border-top: 5px solid #717171;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 40px ;
+}
+
+footer h1{
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid #ffff;
+  width: 10%;
+  padding: 5px 10px;
+}
+
+footer .services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+footer .services .service{
+  align-items: center;
+  
+}
+footer .services .service{
+  max-width: 30%;
+  padding: 10px;
+}
+
+@media screen and (max-width:680px){
+  nav .onglets{
+    margin-left: 50px;
+    margin-bottom: 5px;
+  } .main .content .card .left{
+    flex: 0 0 87%;
+    align-items: center;
+  }
+  .main .content .card .right img{
+    margin: 0;
+  } 
+  footer .title-footer{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  footer .services .service{
+    max-width: 90%;
+  }
+}
